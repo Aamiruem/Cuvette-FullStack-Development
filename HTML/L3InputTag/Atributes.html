@@ -1,0 +1,175 @@
+HTML input attributes are used to define additional properties and behaviors for input elements. Below is an explanation of the common input attributes you mentioned, along with examples:
+
+1. value
+Specifies the default value for an input field.
+
+This value is displayed when the page loads and is sent when the form is submitted.
+
+html
+Copy
+<input type="text" name="username" value="JohnDoe">
+Run HTML
+2. placeholder
+Provides a short hint or example text that appears inside the input field before the user enters any data.
+
+It disappears when the user starts typing.
+
+html
+Copy
+<input type="text" name="username" placeholder="Enter your username">
+Run HTML
+3. readonly
+Makes the input field read-only, meaning the user cannot modify its value.
+
+The value is still sent when the form is submitted.
+
+html
+Copy
+<input type="text" name="username" value="JohnDoe" readonly>
+Run HTML
+4. required
+Specifies that the input field must be filled out before submitting the form.
+
+If the field is empty, the form will not submit, and the browser will display a warning.
+
+html
+Copy
+<input type="text" name="username" required>
+Run HTML
+5. name
+Defines the name of the input field. This name is used to identify the input when the form is submitted.
+
+It is essential for form data processing on the server side.
+
+html
+Copy
+<input type="text" name="username">
+Run HTML
+6. max and min
+Used with numeric input types (number, date, range, etc.) to set the maximum and minimum allowed values.
+
+For type="number":
+
+html
+Copy
+<input type="number" name="age" min="1" max="100">
+Run HTML
+For type="date":
+
+html
+Copy
+<input type="date" name="birthdate" min="2000-01-01" max="2023-12-31">
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes Example</title>
+</head>
+<body>
+    <form>
+        <!-- Value Attribute -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="JohnDoe"><br><br>
+
+        <!-- Placeholder Attribute -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Readonly Attribute -->
+        <label for="readonlyField">Readonly Field:</label>
+        <input type="text" id="readonlyField" name="readonlyField" value="Cannot edit this" readonly><br><br>
+
+        <!-- Required Attribute -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Min and Max Attributes -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+Explanation of the Example:
+value="JohnDoe":
+
+Sets the default value of the username field to "JohnDoe".
+
+placeholder="Enter your email":
+
+Displays a hint inside the email input field.
+
+readonly:
+
+Makes the "Readonly Field" input uneditable.
+
+required:
+
+Ensures the password field must be filled out before submitting the form.
+
+min="1" and max="100":
+
+Restricts the age input to values between 1 and 100.
+
+name:
+
+Identifies each input field when the form is submitted.
+
+Additional Common Attributes:
+7. disabled
+Disables the input field, making it unclickable and uneditable.
+
+The value is not sent when the form is submitted.
+
+html
+Copy
+<input type="text" name="disabledField" value="Disabled" disabled>
+Run HTML
+8. maxlength
+Specifies the maximum number of characters allowed in an input field.
+
+html
+Copy
+<input type="text" name="username" maxlength="10">
+Run HTML
+9. pattern
+Defines a regular expression that the input value must match.
+
+Useful for validation (e.g., phone numbers, passwords).
+
+html
+Copy
+<input type="text" name="zipcode" pattern="[0-9]{5}" placeholder="12345">
+Run HTML
+10. autofocus
+Automatically focuses the input field when the page loads.
+
+html
+Copy
+<input type="text" name="username" autofocus>
+Run HTML
+11. step
+Specifies the interval between valid numbers for type="number" or type="range".
+
+html
+Copy
+<input type="number" name="quantity" min="0" max="100" step="10">

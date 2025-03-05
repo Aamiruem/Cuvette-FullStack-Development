@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Input Attributes</title>
+</head>
+<body>
+    <form>
+        <!-- Disabled Attribute -->
+        <label for="disabledField">Disabled Field:</label>
+        <input type="text" id="disabledField" name="disabledField" value="Cannot edit this" disabled><br><br>
+
+        <!-- Maxlength Attribute -->
+        <label for="username">Username (max 10 characters):</label>
+        <input type="text" id="username" name="username" maxlength="10"><br><br>
+
+        <!-- Pattern Attribute -->
+        <label for="zipcode">Zipcode (5 digits):</label>
+        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345"><br><br>
+
+        <!-- Autofocus Attribute -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autofocus><br><br>
+
+        <!-- Step Attribute -->
+        <label for="quantity">Quantity (step 10):</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
