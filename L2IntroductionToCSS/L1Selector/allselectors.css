@@ -1,0 +1,37 @@
+/* Paragraphs that come immediately after any image */
+img + p {
+  font-weight: bold;
+}
+
+/* The white space around the + combinator is optional but recommended. */
+
+
+/* The white space around the + combinator is optional but recommended. */
+/* former_element + target_element { style properties } */
+
+li:first-of-type + li {
+  color: red;
+  font-weight: bold;
+}
+
+
+li:has(+ li:last-of-type) {
+  color: red;
+  font-weight: bold;
+}
+
+
+span {
+  background-color: aqua;
+}
+
+div > span {
+  background-color: yellow;
+}
+
+
+/* col.selected||td {
+  background: gray;
+  color: white;
+  font-weight: bold;
+} */

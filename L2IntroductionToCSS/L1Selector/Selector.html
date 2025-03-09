@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Selector.css">
+    <style>
+        h1 {
+            color: red;
+        }
+        h2 {
+            color: blue;
+        }
+        .radBackGround {
+            background-color: red;
+        }
+        #chngeColor {
+            color: green;
+        }
+
+        /* Add media query to change color when screen size is 600px or less */
+        @media screen and (max-width: 600px) {
+            h1, h2, #chngeColor {
+                color: yellow;
+            }
+        }
+        *{
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid rgb(141, 103, 103);
+            border-radius: 5px;
+            color: rgb(112, 87, 87);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <h2 class="radBackGround">This is another heading</h2>
+    <h1>This is another heading</h1>
+    <h2 class="radBackGround">This is another heading</h2>
+    <h1 id="chngeColor">This is another heading</h1>
+</body>
+</html>
