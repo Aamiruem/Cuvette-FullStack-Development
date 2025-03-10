@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Selector.css">
+    <style>
+        /* h1:first-of-type {
+            color: red;
+        }
+        h2:nth-of-type(even) {
+            color: blue;
+        }
+        p:last-of-type {
+            color: green;
+        } */
+
+        h1 + h2 {
+            color: yellow;
+        }
+
+        h3 ~ h4 {
+            color: rgb(57, 21, 205);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <h2>This is childSelectors</h2>
+    <h1>This is another heading</h1>
+    <h2>This is another child selector</h2>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+
+
+
+
+     <h3>This is a heading</h3>
+    <h4>This is childSelectors</h4>
+    <h3>This is another heading</h3>
+    <h4>This is another child selector</h4>
+</body>
+</html>
