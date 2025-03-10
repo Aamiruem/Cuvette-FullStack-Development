@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        p::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(3, 99, 18);
+            margin-right: 5px;
+            border-radius: 50px;
+        }
+        p::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            opacity: 0.5;
+            background-color: rgb(0, 0, 0);
+            margin-left: 5px;
+            border-radius: 50px;
+        }
+        #chat::first-line { 
+            background-color: chartreuse;
+        }
+        #newchat::last-line { 
+            background-color: chartreuse;
+            font-family: 'Courier New', Courier, monospace;
+
+            /* Add a marker to the last line */
+            position: relative;
+            padding-left: 25px;
+            margin-left: -25px;
+            background-color: transparent;
+            border: none;
+            border-left: 5px solid chartreuse;
+            color: white;
+        }
+        #newchat::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(3, 99, 18);
+            margin-right: 5px;
+            border-radius: 50px;
+        }
+        #newchat::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            opacity: 0.5;
+            background-color: rgb(0, 0, 0);
+            margin-left: 5px;
+            border-radius: 50px;
+        }
+        #newchat::marker {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(3, 99, 18);
+            margin-right: 5px;
+            border-radius: 50px;
+        }
+            
+    </style>
+</head>
+<body>
+
+    <p>Active</p>
+    <p id="chat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste suscipit a placeat architecto nostrum eos vitae culpa id quas, similique fugiat quo distinctio quod rem repellat obcaecati officiis fuga soluta.</p>
+
+    <p id="newchat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo unde dicta ducimus non voluptatibus quod, maiores suscipit recusandae temporibus fugiat voluptates, distinctio accusamus deserunt tenetur assumenda, aut nostrum ipsam provident?
+    Quia sequi mollitia eveniet rerum. Vel, tempora illo voluptatum facilis dignissimos magnam qui illum, omnis, iste deserunt quos! Quibusdam distinctio placeat dolore provident mollitia dolorem officia excepturi eaque sequi. Illo.
+    Optio soluta cupiditate, hic consequatur repellendus reprehenderit architecto, placeat vero facere nulla minima dolorem earum est consectetur vel. Ducimus dignissimos quia deserunt in explicabo excepturi aliquam adipisci officiis officia praesentium.
+    Et at sequi repellendus sapiente expedita officiis explicabo velit commodi vero minus laudantium quas consequatur, omnis obcaecati delectus distinctio nobis in! Numquam iusto aut ex iste laboriosam ipsam harum quos.
+    Ipsam ad, at placeat quod quis quia ab laborum assumenda illo sequi consequatur vero facilis nostrum. Assumenda ut debitis magni aliquam voluptate ea dignissimos quidem, id cupiditate deleniti sapiente aut.
+    Laboriosam consectetur qui voluptates beatae tempore fugit, tenetur, numquam similique, in laudantium voluptate itaque molestias fuga? Necessitatibus, porro. Itaque, fugit voluptatum sequi porro officiis placeat a ab mollitia nemo consectetur.
+    Odit illum quam eos veniam a sit quisquam fugit quis eius distinctio ratione voluptate asperiores vel dicta doloremque repudiandae exercitationem quibusdam quia nemo iusto, est sapiente possimus. Nihil, placeat blanditiis.
+    Delectus molestiae perspiciatis nobis culpa nemo repudiandae optio magni quae ullam corrupti consequatur quisquam odit consequuntur voluptate voluptatum, consectetur odio ea nisi esse? Dolorum blanditiis neque perferendis corporis, eum doloribus.
+    Esse sit doloribus deleniti optio consectetur minima iste! Quis vel rerum porro reiciendis aliquam impedit tenetur soluta, asperiores, repellat explicabo labore consectetur harum id velit aperiam veritatis sit expedita animi?
+    Excepturi commodi fugiat maiores laudantium molestias maxime pariatur nobis dolorem cumque quo sunt nisi dignissimos hic temporibus, vitae sint deserunt suscipit natus minima. Accusantium magni odio sed distinctio corporis! Illo.</p>
+</body>
+</html>

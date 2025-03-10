@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        p:nth-child(odd) {
+            color: green;
+        }
+
+        /* Apply alternating colors for even and odd p elements */
+        p:nth-child(2n) {
+            color: red;
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* odd */
+        p:nth-child(2n+1) {
+            color: rgb(103, 95, 95);
+            background-color: rgb(16, 18, 131);
+            color:white;
+        }
+        p:nth-child(3n) {
+            color: blue;
+        } 
+        p:nth-child(3n+0) {
+            color: yellow;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+
+            /* Add transition effect */
+            transition: color 0.5s, background-color 0.5s;
+
+            /* Add hover effect */
+            &:hover {
+                color: red;
+                background-color: lightgray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <p>four</p>
+    <p>five</p>
+    <p>six</p>
+    <p>seven</p>
+    <p>eight</p>
+    <p>nine</p>
+</body>
+</html>
