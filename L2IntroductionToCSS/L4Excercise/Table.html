@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+th {
+    background-color: #f8f9fa;
+    padding: 0px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+td {
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+} */
+
+
+        table {
+
+            td,
+            th {
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+
+            tr:nth-child(odd) td {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) td {
+                background-color: #ffffff;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Table-Header 1</th>
+                <th>Table-Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+            <tr>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+            </tr>
+            <tr>
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+            </tr>
+            <tr>
+                <td>Cell 9</td>
+                <td>Cell 10</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
