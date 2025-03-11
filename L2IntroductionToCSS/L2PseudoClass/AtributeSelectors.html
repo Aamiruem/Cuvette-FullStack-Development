@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href^="https"] {
+            color: red;
+        }
+        a[href$=".com"] {
+            color: green;
+        }
+        a[href*=".net"] {
+            color: blue;
+        }
+        a[href*=".gov"] {
+            color: yellow;
+        }
+        input[type="email"] {
+            color: purple;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 18px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#">internal1</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="#">internal2</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+<br>
+<br>
+<br>
+    <input type="text" >
+    <input type="email">
+    <input type="phone">
+    <input type="password">
+</body>
+</html>

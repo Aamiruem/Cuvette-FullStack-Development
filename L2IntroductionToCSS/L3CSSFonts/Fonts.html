@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        /* @font-face {
+            font-family: "myFirstFont";
+            src: url("fonts/Roboto-Regular.ttf");
+        } */
+        /* p {
+            font-family: "myFirstFont";
+        } */
+        /* p{
+              font-style: normal;
+             font-size: x-large;
+            font-style: italic;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            font-weight: bold;
+            line-height: 1.5;
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out; 
+        } */
+
+        p{
+            /* font-style: normal; */
+/* font-style: italic; */
+/* font-style: oblique;
+font-style: oblique 10deg; */
+
+/* Global values */
+/* font-style: inherit;
+font-style: initial;
+font-style: revert;
+font-style: revert-layer;
+font-style: unset; */
+
+        }
+
+        @font-face {
+  src: url("https://mdn.github.io/shared-assets/fonts/variable-fonts/AmstelvarAlpha-VF.ttf");
+  font-family: "AmstelvarAlpha";
+  font-style: normal;
+}
+
+.sample {
+  font:
+    2rem "AmstelvarAlpha",
+    sans-serif;
+  font-variation-settings: "slnt" 12;
+  font-style: oblique 23deg;
+}
+
+
+
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+p{
+    font-weight: bolder;
+    font-style: oblique 10deg;
+    font-family: monospace;
+}
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+
+    <p1 class="sample">
+  ...it would not be wonderful to meet a Megalosaurus, forty feet long or so,
+  waddling like an elephantine lizard up Holborn Hill.
+
+    <br>
+    <br>
+    <p class="normal">This is a normal paragraph</p>
+    <p class="italic">This is a italic paragraph</p>
+    <p class="oblique">This is a oblique paragraph</p>
+</p1>
+
+</body>
+</html>
