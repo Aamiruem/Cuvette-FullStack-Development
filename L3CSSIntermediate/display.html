@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 24px;
+            padding: 10px;
+            border: 3px solid black;
+            box-sizing: border-box;
+            width: 20%;
+            height: 100px;
+            background-color: lightgray;
+            margin: 10px;
+            text-align: center;
+            line-height: 150px;
+            transition: background-color 0.5s;
+        }
+        span{
+            background-color: chartreuse;
+            /* display: block; */
+            display: inline-block;
+            font-size: 24px;
+            padding: 10px;  
+            margin: 10px;
+            border: 3px solid black;
+            box-sizing: border-box;
+            width: 20%;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+            transition: background-color 0.5s;
+            cursor: pointer;
+            &:hover {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>first</div>
+    <div>second</div>
+    <div>third</div>
+
+    <span>one</span>
+    <span>two</span>
+    <span>three</span>
+</body>
+</html>
